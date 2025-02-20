@@ -1,9 +1,9 @@
+
 // export interface Device {
 //   id: string
 //   name: string
 //   type: string
 //   state: boolean
-//   updateInterval: number
 // }
 
 // export interface User {
@@ -17,6 +17,15 @@
 //   device: Device
 //   user: User
 // }
+
+// export interface UpdateDeviceRequest {
+//   deviceId: string
+//   newState: boolean
+//   userId: string
+// }
+
+
+
 
 export interface Device {
   id: string
@@ -34,7 +43,7 @@ export interface User {
 export interface DeviceUpdate {
   type: "deviceUpdate"
   device: Device
-  user: User
+  // user: User
 }
 
 export interface UpdateDeviceRequest {
@@ -42,8 +51,6 @@ export interface UpdateDeviceRequest {
   newState: boolean
   userId: string
 }
-
-
 
   
   
